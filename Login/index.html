@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ARCADE CONNECT</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">ARCADE CONNECT</h1>
+
+        <!-- Sign up button now has an id so we can handle clicks -->
+        <div class="auth">
+          <button id="signup-btn" class="btn signup">Sign Up</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container main">
+      <section class="hero">
+        <h2 class="hero-title">ARCADE<br>CONNECT</h2>
+        <p class="muted">Join classic-styled online matches</p>
+
+        <!-- centered stacked login below the title -->
+        <form class="hero-login" action="#" method="post" novalidate>
+          <label class="visually-hidden" for="hero-user">Username or email</label>
+          <input id="hero-user" name="user" type="text" placeholder="Username or email" autocomplete="username" />
+
+          <label class="visually-hidden" for="hero-pass">Password</label>
+          <input id="hero-pass" name="pass" type="password" placeholder="Password" autocomplete="current-password" />
+
+          <button class="btn primary" type="submit">Sign In</button>
+
+          <a class="forgot" href="#" style="margin-top:6px;display:inline-block;">Forgot?</a>
+        </form>
+
+        <div class="controls btn-group" role="group" aria-label="Primary actions">
+          <button id="play" class="btn primary">PLAY</button>
+          <button id="multiplayer" class="btn">MULTIPLAYER</button>
+          <button id="settings" class="btn">SETTINGS</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Arcade Style Multiplayer Fun</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // When "Sign Up" is pressed, load the title screen from the Title folder
+      document.addEventListener('DOMContentLoaded', function () {
+        var signup = document.getElementById('signup-btn');
+        if (!signup) return;
+        signup.addEventListener('click', function (e) {
+          e.preventDefault();
+          // navigate to Title/index.html in the same tab
+          window.location.href = 'Title/index.html';
+        });
+      });
+    </script>
+  </body>
+</html>
