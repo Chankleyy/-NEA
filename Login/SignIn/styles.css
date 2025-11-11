@@ -113,7 +113,7 @@ body.dark .site-header {
 /* Forgot password link */
 .login-form .forgot {
   font-size: 11px;
-  color: rgba(0,0,0,0.6);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: underline;
   margin-left: 6px;
 }
@@ -267,7 +267,7 @@ body.dark .site-footer {
 /* small forgot link centered beneath the button */
 .hero-login .forgot {
   text-align: center;
-  color: rgba(0,0,0,0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 13px;
   text-decoration: underline;
 }
